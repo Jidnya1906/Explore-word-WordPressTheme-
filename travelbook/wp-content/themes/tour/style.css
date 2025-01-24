@@ -1,0 +1,444 @@
+/*!
+Theme Name: tour
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tour
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+tour is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+body {
+     font-family: "Inder", sans-serif;
+}
+/* header start */
+.main-header{
+   width: 100%;
+    display: flex;
+    justify-content: end;
+   position: absolute;
+   z-index: 99;
+   top:20px;
+}
+.menu{
+display: block;
+margin:0 15px;
+}
+.menu-names{
+    color: white;
+}
+.logo{
+    position: absolute;
+    z-index: 99;
+    top:20px;
+    display: flex;
+    align-items: center;
+}
+.lgo{
+    color:red;
+}
+.icns{
+    font-size: 22px;
+    margin: 0 10px;
+    color: white;
+}
+.srch{
+    background-color: #6c757d;
+    color: white;
+}
+/* home start */
+header {
+   height:500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group.my-3 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabs {
+    color: white;
+    border:1px solid white;
+    font-size: 22px;;
+}
+.header-content{
+    display: block;
+}
+header h1 {
+    font-size: 3rem;
+}
+
+.carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+/* cultural place */
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* .testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    height: 440px;
+    width: 33%;
+    border:1px solid black;
+    margin:0 20px;
+} */
+.testimonial-slider {
+   
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    height: 440px;
+    width: 28%;
+    border:1px solid black;
+    margin:20px;
+    float: left;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial h3 {
+    font-size: 1em;
+    color: #555;
+}
+.testimonial img
+{
+    width: 100%;
+    height: 150px;
+}
+
+.ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    font-size: 16px !important;
+}
+.one{
+    width:100%;
+    height:500px;
+}
+.two, .three, .four, .five{
+    width:100%;
+    height:240px;
+    margin:7px 0;
+}
+
+.slid-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.locations{
+    font-size: 10px;
+    line-height: 1px;
+    
+}
+.loc{
+    margin:0 10px;
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.card-title, .card-text, .viewmore{
+    margin:0 10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+    color:black;
+}
+.wishlist-btn {
+    position: relative;
+    top: -150px;
+    left:20px;
+    z-index: 999;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.wishlist-btn:focus{
+    border: none;
+    outline: 0;
+}
+
+.wishlist-btn .heart {
+    font-size: 24px; /* Adjust size as needed */
+    color: rgb(250, 250, 250); /* Default color */
+}
+
+.wishlist-btn.active .heart {
+    color: red; /* Color when added to wishlist */
+}
+
+
+.viewmore{
+    background-color: #7A7A9D;
+    padding:4px 10px;
+    color:white;
+}
+/* top place */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+h2{
+    font-size: 38px;
+    font-weight: 800;
+}
+/* footer */
+.footer{
+    margin-top:50px;
+    background-color:#27282D;
+    padding:60px 0;
+}
+.social{
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+}
+
+.iconss{
+width:32px;
+margin:0 10px 0 0;
+color: white;
+}
+h3{
+    color: white;
+}
+.li{
+    list-style: none;
+    margin:10px 0;
+    font-size: 16px ;
+    font-weight: 400;
+    color:white;
+    list-style: none;
+}
+.li a{
+    font-size: 16px ;
+    font-weight: 400;
+    color:white;
+    list-style: none;
+}
+.li a:hover{
+    color:white;
+    text-decoration: none;
+}
+.cr{
+    width:100%;
+    padding:15px 0;
+    background-color: #1A1B1E;
+}
+.crpara{
+    margin-bottom: 0;
+    color:white;
+}
+
+/* end */
+
+/* single view */
+.back{
+    font-size: 30px;
+}
+.single-img{
+    width:100%;
+}
+.reserve{
+    width:100%;
+    border-radius: 15px;
+    background-color: rgba(217, 217, 217, 0.4);
+    padding:20px;
+}
+.action{
+    display: flex;
+    justify-content: end;
+}
+.act-btn{
+    background-color: #7A7A9D;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color:white;
+    margin:16px 15px 0 15px;
+    border:0;
+}
+
+/* signup */
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.image-container1 {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container1 img {
+    max-width: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+.form-wrapper {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h2 {
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.profile {
+    width: 100%;
+    padding: 10px;
+    background-color: #764ba2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.profile:hover {
+    background-color: #5b3d8e;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toggle-form a {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.toggle-form a:hover {
+    text-decoration: underline;
+}
